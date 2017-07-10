@@ -50,7 +50,6 @@ export class HeroService {
       .then(() => hero)
       .catch(this.handleError);
   }
-
   
   create(name: string): Promise<Hero> {
     return this.http
